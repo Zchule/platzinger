@@ -10,6 +10,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-button routerLink="/conversation">Conversation</ion-button>
-  <ion-button routerLink="/login">Login</ion-button>
+  <p *ngFor='let user of friends; index as i'>
+    {{i}} - {{user.nick}} - {{user.email}}
+  </p>
 </ion-content>
