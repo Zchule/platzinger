@@ -12,7 +12,9 @@
 <ion-content>
   <b>Amigos</b>
   <ion-list *ngFor='let user of friends; index as i'>
-      <p *ngIf='user.friend'>{{i}} - {{user.nick}} - {{user.email}}</p>
+    <div *ngIf='user.friend'>
+        <a routerLink="/conversation/{{user.uid}}">{{i}} - {{user.nick}} - {{user.email}}</a>
+    </div>
   </ion-list>
 
   <b>No Amigos</b>
