@@ -34,7 +34,7 @@ export class HomePage {
       subNick: ' hola',
       edad: 28,
       email: 'dasd@as.com',
-      friend: true,
+      friend: false,
       uid: '1'
     };
 

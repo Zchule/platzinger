@@ -10,7 +10,14 @@
 </ion-header>
 
 <ion-content>
-  <p *ngFor='let user of friends; index as i'>
-    {{i}} - {{user.nick}} - {{user.email}}
-  </p>
+  <b>Amigos</b>
+  <ion-list *ngFor='let user of friends; index as i'>
+      <p *ngIf='user.friend'>{{i}} - {{user.nick}} - {{user.email}}</p>
+  </ion-list>
+
+  <b>No Amigos</b>
+  <ion-list *ngFor='let user of friends; index as i'>
+      <p *ngIf='!user.friend'>{{i}} - {{user.nick}} - {{user.email}}</p>
+  </ion-list>
+  
 </ion-content>
