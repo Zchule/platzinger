@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from '../interfaces/user';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+ constructor() {
+   let myUser: User = {
+     nick: 'Eduardo',
+     subNick: ' hola',
+     edad: 28,
+     email: 'dasd@as.com',
+     friend: true,
+     uid: '1'
+   };
+ }
 }
