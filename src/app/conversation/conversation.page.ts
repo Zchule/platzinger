@@ -14,6 +14,9 @@ export class ConversationPage implements OnInit {
   friends: User[];
   friend: User;
 
+  price = 78.31432143241324;
+  today: any = Date.now();
+
   constructor(
     private activeRoute: ActivatedRoute,
     private userService: UserService
